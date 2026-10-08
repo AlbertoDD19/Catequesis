@@ -256,3 +256,32 @@ footer{max-width:1120px;margin:0 auto;padding:28px clamp(20px,5vw,72px) 40px;bor
 .resource-prompt{padding-top:20px;border-top:1px solid var(--line);font-size:15px;color:var(--muted)}
 @media(max-width:850px){.resource-steps{grid-template-columns:repeat(2,1fr)}.resource-simple{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.resource-steps,.resource-simple{grid-template-columns:1fr}.prayer-resource>h2{font-size:40px}.resource-steps>div{padding:20px}}
+
+
+/* Oración: tarjetas desplegables */
+.prayer-accordion{margin-top:70px;display:grid;gap:12px}
+.prayer-accordion-card{background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;scroll-margin-top:95px}
+.prayer-accordion-card summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:58px minmax(0,1fr) 42px;gap:22px;align-items:center;padding:25px 28px}
+.prayer-accordion-card summary::-webkit-details-marker{display:none}
+.prayer-accordion-card summary:hover{background:#faf9f6}
+.prayer-accordion-card .prayer-number{margin:0;font-size:32px}
+.accordion-copy{display:grid;gap:5px;min-width:0}
+.accordion-copy .entry-kicker{display:block}
+.accordion-copy strong{font-size:26px;line-height:1.05;letter-spacing:-.035em}
+.accordion-copy small{font-size:14px;color:var(--muted);line-height:1.45}
+.accordion-toggle{width:36px;height:36px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;font-size:24px;font-weight:400;color:var(--muted);transition:transform .2s ease,background .2s ease,color .2s ease}
+.prayer-accordion-card[open] summary{border-bottom:1px solid var(--line)}
+.prayer-accordion-card[open] .accordion-toggle{transform:rotate(45deg);background:var(--ink);color:#fff;border-color:var(--ink)}
+.accordion-content{padding:30px 28px 32px}
+.accordion-content .resource-intro{margin:0 0 26px}
+.accordion-content .resource-steps{margin-top:0}
+.accordion-content .resource-simple{margin-top:0}
+.accordion-content .resource-quote{margin:0 0 18px}
+@media(max-width:700px){
+  .prayer-accordion{margin-top:50px}
+  .prayer-accordion-card summary{grid-template-columns:42px minmax(0,1fr) 36px;gap:14px;padding:21px 18px}
+  .prayer-accordion-card .prayer-number{font-size:27px}
+  .accordion-copy strong{font-size:21px}
+  .accordion-copy small{font-size:13px}
+  .accordion-content{padding:24px 18px 26px}
+}

@@ -170,3 +170,43 @@ footer{max-width:1120px;margin:0 auto;padding:28px clamp(20px,5vw,72px) 40px;bor
 .weekly-challenge h4{font-size:21px;line-height:1.15;letter-spacing:-.025em;margin:9px 0 8px}
 .weekly-challenge p{font-size:13px!important;line-height:1.55;margin:0!important}
 .weekly-challenge strong{color:var(--ink)}
+
+/* Oración */
+.prayer-page{max-width:1040px}
+.prayer-hero{max-width:850px}
+.prayer-hero h1{margin-bottom:24px}
+.prayer-hero .lead{max-width:680px}
+.prayer-feature{margin-top:58px;background:var(--ink);color:#fff;border-radius:var(--radius);padding:clamp(30px,5vw,52px);display:grid;grid-template-columns:70px minmax(0,1fr);gap:26px;align-items:start}
+.prayer-feature-mark{font-size:44px;color:#363943;line-height:1}
+.prayer-feature h2{font-size:clamp(28px,4.5vw,48px);line-height:1.05;letter-spacing:-.045em;margin:12px 0}
+.prayer-feature h2 em{font-style:normal;color:#bfc1c6}
+.prayer-feature p{color:#c8c9ce;max-width:650px;margin:0}
+.prayer-grid{margin-top:20px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.prayer-card{position:relative;display:block;min-height:235px;padding:30px;border:1px solid var(--line);border-radius:22px;background:var(--card);color:inherit;text-decoration:none;transition:transform .18s ease,box-shadow .18s ease}
+.prayer-card:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(17,24,39,.07)}
+.prayer-card-main{grid-row:span 2;min-height:484px;background:var(--accent2);border-color:transparent}
+.prayer-number{display:block;font-size:38px;font-weight:900;line-height:1;color:#d9d4cc;margin-bottom:30px}
+.prayer-card-main .prayer-number{color:#c9b39d}
+.prayer-card h2,.prayer-card h3{letter-spacing:-.04em;margin:12px 0}
+.prayer-card h2{font-size:clamp(38px,5vw,58px);line-height:.98}
+.prayer-card h3{font-size:28px;line-height:1.05}
+.prayer-card p{max-width:360px;color:var(--muted);font-size:15px;margin:0}
+.prayer-card-main p{color:#62584f;max-width:430px}
+.prayer-arrow{position:absolute;right:28px;bottom:24px;font-size:27px;color:var(--accent)}
+.prayer-lower{margin-top:70px;padding:38px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:center}
+.prayer-lower h2{font-size:clamp(34px,4.5vw,50px);line-height:1;letter-spacing:-.045em;margin:12px 0 0}
+.prayer-chips{display:flex;flex-wrap:wrap;gap:9px}
+.prayer-chips span{padding:10px 14px;border:1px solid var(--line);border-radius:999px;background:var(--card);font-size:13px;color:var(--muted)}
+.taize-card{margin-top:20px;border-radius:var(--radius);background:var(--ink);color:#fff;padding:38px 42px;display:flex;justify-content:space-between;align-items:center;gap:30px}
+.taize-card h2{font-size:42px;letter-spacing:-.04em;margin:8px 0}
+.taize-card p{max-width:650px;color:#c8c9ce;margin:0}
+.taize-cross{font-size:60px;color:#363943;flex:0 0 auto}
+@media(max-width:700px){
+  .prayer-feature{grid-template-columns:1fr;gap:8px;margin-top:45px}
+  .prayer-grid{grid-template-columns:1fr}
+  .prayer-card-main{grid-row:auto;min-height:330px}
+  .prayer-card{min-height:210px}
+  .prayer-lower{grid-template-columns:1fr;gap:25px;margin-top:50px}
+  .taize-card{padding:30px 25px;align-items:flex-start}
+  .taize-cross{display:none}
+}

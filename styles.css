@@ -125,28 +125,44 @@ footer{max-width:1120px;margin:0 auto;padding:28px clamp(20px,5vw,72px) 40px;bor
   nav a{font-size:13px}
 }
 /* Bitácora de fe */
-.bitacora-page{max-width:1000px}
-.bitacora-entry{margin-top:55px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(28px,5vw,52px);overflow:hidden}
-.entry-header{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:28px}
+.bitacora-page{max-width:1040px}
+.bitacora-intro{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(260px,.65fr);gap:60px;align-items:end}
+.bitacora-intro h1{margin-bottom:0}
+.bitacora-intro h1 em{color:#77706a}
+.bitacora-intro .lead{margin:0 0 8px;max-width:440px;font-size:17px}
+.bitacora-entry{margin-top:68px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(28px,5vw,58px);overflow:hidden;box-shadow:0 18px 50px rgba(17,24,39,.05)}
+.entry-top{display:flex;justify-content:space-between;align-items:center;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.entry-top>div{display:flex;align-items:center;gap:14px}
 .entry-ref{font-size:13px;font-weight:700;color:var(--muted)}
-.bitacora-entry h2{font-size:clamp(38px,6vw,64px);line-height:1;letter-spacing:-.055em;margin:0 0 32px}
-.entry-verse{background:var(--ink);color:#fff;border-radius:20px;padding:clamp(28px,5vw,46px);position:relative;margin-bottom:36px}
-.entry-verse .quote-mark{position:absolute;top:8px;left:24px;font-size:80px;line-height:1;color:#363943;font-weight:900}
-.entry-verse p{font-size:clamp(28px,5vw,48px);line-height:1.1;letter-spacing:-.04em;font-weight:800;margin:12px 0 10px;position:relative}
-.entry-verse small{color:#c8c9ce;font-size:13px;font-weight:700}
-.entry-body{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(230px,.7fr);gap:36px;align-items:start}
-.entry-body p{color:var(--muted);font-size:17px}
-.entry-body strong{color:var(--ink)}
-.bitacora-carry{background:var(--paper);border-radius:18px;padding:24px}
-.bitacora-carry h3{font-size:24px;line-height:1.2;margin:12px 0}
-.bitacora-carry p{font-size:14px;margin-bottom:0}
-.bitacora-note{margin:20px 0 0;padding:25px 28px;border:1px dashed #c9c3b9;border-radius:18px;display:flex;gap:16px;align-items:center;color:var(--muted)}
-.bitacora-note>span{color:var(--accent);font-size:22px}
-.bitacora-note p{margin:0}
+.entry-symbol{font-size:22px;color:var(--accent)}
+.entry-title{padding:48px 0 30px}
+.entry-kicker{font-size:10px;letter-spacing:.15em;font-weight:850;color:var(--accent)}
+.entry-title h2{font-size:clamp(48px,7vw,78px);line-height:.95;letter-spacing:-.065em;margin:12px 0 0}
+.entry-verse{background:var(--ink);color:#fff;border-radius:20px;padding:clamp(32px,5vw,50px);position:relative;margin-bottom:44px;min-height:210px;display:flex;flex-direction:column;justify-content:center}
+.entry-verse .quote-mark{position:absolute;top:4px;left:25px;font-size:92px;line-height:1;color:#363943;font-weight:900}
+.entry-verse p{font-size:clamp(30px,5vw,52px);line-height:1.05;letter-spacing:-.045em;font-weight:800;margin:0 0 12px;position:relative}
+.entry-verse small{color:#c8c9ce;font-size:12px;font-weight:700}
+.entry-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(250px,.65fr);gap:58px;align-items:start}
+.entry-reflection p{color:var(--muted);font-size:17px;margin:15px 0}
+.entry-reflection strong{color:var(--ink)}
+.bitacora-carry{background:var(--paper);border-radius:20px;padding:28px;position:sticky;top:100px}
+.carry-number{display:block;font-size:42px;font-weight:900;line-height:1;color:#d9d4cc;margin-bottom:28px}
+.bitacora-carry h3{font-size:30px;line-height:1.05;letter-spacing:-.035em;margin:12px 0}
+.bitacora-carry p{font-size:14px;color:var(--muted);margin:0}
+.carry-line{height:1px;background:var(--line);margin:26px 0}
+.carry-small{font-size:12px!important}
+.bitacora-note{margin:22px 0 0;padding:25px 30px;border-top:1px solid var(--line);display:flex;gap:18px;align-items:flex-start;color:var(--ink)}
+.bitacora-note>span{color:var(--accent);font-size:20px;line-height:1.4}
+.bitacora-note strong{font-size:15px}
+.bitacora-note p{margin:3px 0 0;color:var(--muted);font-size:14px}
 @media(max-width:700px){
-  .entry-header{align-items:flex-start;flex-direction:column;gap:8px}
-  .bitacora-entry{padding:24px}
-  .entry-body{grid-template-columns:1fr;gap:18px}
-  .entry-verse{padding:26px 22px}
-  .bitacora-note{align-items:flex-start}
+  .bitacora-intro{grid-template-columns:1fr;gap:18px}
+  .bitacora-intro .lead{font-size:16px}
+  .bitacora-entry{margin-top:48px;padding:24px}
+  .entry-top>div{align-items:flex-start;flex-direction:column;gap:5px}
+  .entry-title{padding:36px 0 25px}
+  .entry-grid{grid-template-columns:1fr;gap:30px}
+  .bitacora-carry{position:static}
+  .entry-verse{padding:30px 24px;min-height:180px}
+  .bitacora-note{padding:22px 4px}
 }

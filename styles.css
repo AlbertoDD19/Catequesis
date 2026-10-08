@@ -210,3 +210,25 @@ footer{max-width:1120px;margin:0 auto;padding:28px clamp(20px,5vw,72px) 40px;bor
   .taize-card{padding:30px 25px;align-items:flex-start}
   .taize-cross{display:none}
 }
+
+/* 5 minutos con Jesús */
+.five-minutes{margin-top:82px;padding-top:10px}
+.five-minutes-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,.7fr);gap:60px;align-items:end;padding-bottom:42px;border-bottom:1px solid var(--line)}
+.five-minutes-head h2{font-size:clamp(38px,5vw,58px);line-height:1;letter-spacing:-.05em;margin:12px 0 0}
+.five-minutes-head h2 em{font-style:normal;color:#77706a}
+.five-minutes-head>p{color:var(--muted);margin:0;max-width:430px}
+.prayer-steps{position:relative;padding:8px 0}
+.prayer-step{display:grid;grid-template-columns:95px minmax(0,1fr);gap:25px;padding:34px 0;border-bottom:1px solid var(--line)}
+.step-number{font-size:30px;font-weight:900;color:#d9d4cc;line-height:1}
+.prayer-step h3{font-size:27px;letter-spacing:-.035em;margin:8px 0 7px}
+.prayer-step p{color:var(--muted);font-size:15px;max-width:680px;margin:0}
+.five-minutes-closing{margin-top:26px;padding:25px 28px;background:var(--accent2);border-radius:18px;display:flex;gap:16px;align-items:flex-start}
+.five-minutes-closing>span{color:var(--accent);font-size:20px}
+.five-minutes-closing p{margin:0;color:#62584f;font-size:15px}
+@media(max-width:700px){
+  .five-minutes{margin-top:58px}
+  .five-minutes-head{grid-template-columns:1fr;gap:20px;padding-bottom:30px}
+  .prayer-step{grid-template-columns:55px minmax(0,1fr);gap:10px;padding:28px 0}
+  .prayer-step h3{font-size:24px}
+  .five-minutes-closing{padding:22px}
+}

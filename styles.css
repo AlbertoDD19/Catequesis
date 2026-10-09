@@ -459,3 +459,49 @@ footer{max-width:1120px;margin:0 auto;padding:28px clamp(20px,5vw,72px) 40px;bor
   .mobile-menu-links a.active{background:var(--paper);color:var(--ink);font-weight:800}
   .mobile-menu-links a+a{margin-top:2px}
 }
+
+
+/* Sesión 1: guía práctica y dinámicas bíblicas */
+.session-overview{display:grid;grid-template-columns:1.4fr .65fr 1fr;gap:12px;margin:24px 0 42px}
+.session-overview>div,.discussion-box,.comparison-grid>div{padding:20px;border:1px solid var(--line);border-radius:18px;background:var(--card);min-width:0}
+.session-overview p{margin:8px 0 0;color:var(--muted);font-size:14px}
+.session-block{margin:30px 0;padding:clamp(22px,4vw,38px);border:1px solid var(--line);border-radius:var(--radius);background:rgba(255,255,255,.52);min-width:0}
+.session-block-heading{display:flex;align-items:flex-start;gap:16px;margin-bottom:22px}
+.session-block-heading h2{font-size:clamp(27px,4vw,36px);line-height:1.12;letter-spacing:-.04em;margin:7px 0 0}
+.step-number{display:grid;place-items:center;flex:0 0 44px;width:44px;height:44px;border-radius:14px;background:var(--ink);color:white;font-size:18px;font-weight:800}
+.session-block h3{font-size:21px;letter-spacing:-.025em;margin:24px 0 10px}
+.session-block .scripture-card{margin:20px 0}
+.session-block .scripture-card h3{margin-top:8px;font-size:28px}
+.activity-steps{padding-left:22px}
+.activity-steps li{padding:5px 0}
+.search-chips{margin:15px 0 22px}
+.discussion-box{margin:22px 0;background:var(--accent2);border-color:transparent}
+.discussion-box p{margin:9px 0 0}
+.discussion-box ul{margin:10px 0 0;padding-left:20px}
+.discussion-box li{margin:7px 0}
+.leader-note{margin-top:20px;border:1px dashed #c9c3b9;border-radius:14px;background:#fbfaf7}
+.leader-note summary{cursor:pointer;list-style:none;padding:14px 16px;font-size:14px;font-weight:750;color:var(--ink)}
+.leader-note summary::-webkit-details-marker{display:none}
+.leader-note summary:after{content:"+";float:right;font-size:18px}
+.leader-note[open] summary:after{content:"−"}
+.leader-note p{padding:0 16px 16px;margin:0;font-size:14px;color:var(--muted)}
+.comparison-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:18px 0}
+.comparison-grid p{margin:9px 0 0}
+.question-list{padding-left:22px}
+.question-list li{margin:9px 0}
+.personal-quote{margin:22px 0}
+.personal-quote blockquote{font-size:clamp(30px,5vw,48px)}
+.situation-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:20px 0}
+.situation-list>div{display:flex;gap:14px;align-items:flex-start;padding:17px;border:1px solid var(--line);border-radius:15px;background:var(--card)}
+.situation-list>div>span{font-size:12px;font-weight:800;color:var(--accent);padding-top:3px}
+.situation-list p{margin:0}
+.situation-list strong{color:var(--ink)}
+@media(max-width:700px){
+  .session-overview{grid-template-columns:1fr;gap:9px;margin-bottom:28px}
+  .session-overview>div{padding:16px}
+  .session-block{padding:22px 18px;margin:22px 0}
+  .session-block-heading{gap:12px}
+  .step-number{flex-basis:38px;width:38px;height:38px;border-radius:12px}
+  .comparison-grid,.situation-list{grid-template-columns:1fr}
+  .session-block .scripture-card{padding:22px}
+}

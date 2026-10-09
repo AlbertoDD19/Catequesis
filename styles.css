@@ -515,3 +515,17 @@ footer{max-width:1120px;margin:0 auto;padding:28px clamp(20px,5vw,72px) 40px;bor
 .benedict-note p{max-width:760px;color:#62584f}
 .benedict-note .benedict-reference{font-size:12px;font-weight:750;letter-spacing:.04em;margin-bottom:0}
 @media(max-width:480px){.brand{font-size:13px}.brand-mark{width:29px;height:29px;flex-basis:29px}}
+
+
+/* Sesiones: pequeñas voces de la tradición cristiana */
+.saint-tradition{display:grid;grid-template-columns:44px minmax(0,1fr);gap:18px;margin:24px 0 0;padding:clamp(22px,3vw,30px);border-radius:20px;border:1px solid var(--line);background:#fffdf9;min-width:0}
+.saint-tradition-mark{width:40px;height:40px;display:grid;place-items:center;border-radius:13px;background:var(--accent2);color:#9a7657;font-size:20px}
+.saint-tradition h3{font-size:clamp(22px,3vw,29px);line-height:1.13;letter-spacing:-.035em;margin:10px 0}
+.saint-tradition p{color:var(--muted);margin:10px 0 0}
+.saint-tradition .saint-connection{margin-top:16px;padding-top:14px;border-top:1px solid var(--line);font-size:14px}
+.saint-tradition .saint-connection strong{color:var(--ink)}
+.saint-jp2{background:#f8f6f1}
+.saint-benedict{background:var(--accent2);border-color:transparent}
+.saint-benedict .saint-tradition-mark{background:rgba(255,255,255,.55)}
+.saint-benedict p{color:#62584f}
+@media(max-width:520px){.saint-tradition{grid-template-columns:1fr;gap:10px;padding:22px 18px}.saint-tradition-mark{width:34px;height:34px;border-radius:11px}}

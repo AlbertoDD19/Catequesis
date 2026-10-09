@@ -505,3 +505,13 @@ footer{max-width:1120px;margin:0 auto;padding:28px clamp(20px,5vw,72px) 40px;bor
   .comparison-grid,.situation-list{grid-template-columns:1fr}
   .session-block .scripture-card{padding:22px}
 }
+
+
+/* Identidad de Catequesis San Benito y tradición espiritual */
+.brand{font-size:15px;letter-spacing:-.035em}
+.brand-mark{flex:0 0 32px}
+.benedict-note{margin:34px 0 0;padding:clamp(28px,4vw,42px);border:1px solid var(--line);border-radius:var(--radius);background:var(--accent2)}
+.benedict-note h2{font-size:clamp(28px,4vw,42px);line-height:1.08;letter-spacing:-.045em;margin:12px 0}
+.benedict-note p{max-width:760px;color:#62584f}
+.benedict-note .benedict-reference{font-size:12px;font-weight:750;letter-spacing:.04em;margin-bottom:0}
+@media(max-width:480px){.brand{font-size:13px}.brand-mark{width:29px;height:29px;flex-basis:29px}}

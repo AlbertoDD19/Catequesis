@@ -529,3 +529,14 @@ footer{max-width:1120px;margin:0 auto;padding:28px clamp(20px,5vw,72px) 40px;bor
 .saint-benedict .saint-tradition-mark{background:rgba(255,255,255,.55)}
 .saint-benedict p{color:#62584f}
 @media(max-width:520px){.saint-tradition{grid-template-columns:1fr;gap:10px;padding:22px 18px}.saint-tradition-mark{width:34px;height:34px;border-radius:11px}}
+
+
+/* Imagen para guardar y compartir al final de cada sesión */
+.share-image-section{margin:34px 0;padding:clamp(24px,4vw,42px);border:1px solid var(--line);border-radius:var(--radius);background:var(--card);text-align:center;min-width:0}
+.share-image-section h2{font-size:clamp(28px,4vw,40px);line-height:1.08;letter-spacing:-.04em;margin:10px 0}
+.share-image-section>p{color:var(--muted);max-width:650px;margin:0 auto}
+.share-image-frame{margin:26px auto 0;max-width:620px}
+.share-image-frame img{display:block;width:100%;height:auto;border-radius:18px;border:1px solid var(--line);background:var(--paper)}
+.share-image-frame figcaption{margin-top:10px;color:var(--muted);font-size:12px}
+.share-image-section .share-image-note{margin-top:20px;font-size:14px}
+@media(max-width:700px){.share-image-section{padding:24px 18px}.share-image-frame{margin-top:20px}}
